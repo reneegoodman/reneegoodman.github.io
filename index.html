@@ -4,126 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal website of Renee Goodman">
-    <title>Renee Goodman - Physicist</title>
+    <title>Renée Goodman</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <div class="logo">Renee Goodman</div>
+    <header class="site-header">
+        <div class="container">
+            <nav class="navbar" aria-label="Primary">
+                <a href="#about" class="logo">Renée Goodman</a>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#cv">CV</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
+    <main class="page-content">
+        <section id="about" class="section about-section">
             <div class="container">
-                <div class="hero-content">
-                    <h1>Renée Goodman</h1>
-                    <p class="tagline">Physics • Neuroscience • Intelligence</p>
-                    <p class="intro"> How does intelligence emerge from bain networks? How does the structure of a brain network impact its function? </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <p>I am a physicist by training with an interest in interdisciplinary problems. I completed a BSc in Biology and Physics from the University of Windsor in 2021 
-                        where I conducted research with the Rondeau-Gagné group on conjugated polymers for flexible electronics. Following my bachelor's degree I had a brief interlude 
-                        as a physicist for Thermtest Inc. where I worked on developing instruments for measuring the thermal properties of material. In 2023 I started my MSc in experimental 
-                        condensend matter physics at McGill University with Prof. Guillaume Gervais. My thesis on Mass Flow and Noise Measurements in a Nanoelectrofluidic Device was completed in 2025.
-                        I have now switched to theoretical physics for my PhD, under the supervision of Prof. Viola Priesemann at the Max Planck Institute for Dynamics and Self-Organization, where I use tools from statistical physics and network theory
-                        to analyze large connectomics datasets, such as the Female Adult Fly Brain to understand how brain networks are organized, and how they process information.
-                    </p>
-                    <p>In my spare time I love to lift weights, go bikepacking, knit, and care for my many houseplants. </p>
-                    
-                    <h3>Skills & Technologies</h3>
-                    <div class="skills">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Bayesian Modelling</span>
-                        <span class="skill-tag">MS Office</span>
-                        <span class="skill-tag">Web Design</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">UI/UX</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2>Featured Projects</h2>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <h3>Mass Flow and Noise Measurements in a Nanoelectrofluidic Device</h3>
-                        <p class="project-description">Classical mass transport experiments on the nanoscale examine the flow of gases through nano-
-                            channels or nano-pores to determine parameters such as transmission probability, conductance,
-                            and geometry. These parameters are critical for understanding the behaviour of molecules in these
-                            confined domains. At high pressures, a particular geometry of pore called the de Laval nozzle can
-                            accelerate gases to supersonic speeds and generate sonic black holes, a process first theorized by W. G. Unruh in 1976. During my MSc thesis I experimentally 
-                            measured the flow of He4 gas through an 80nm de Laval nozzle and achieved super-sonic flow rates. This was an important proof-of-principle experiment for
-                            measuring the Unruh effect.
+                <div class="about-grid">
+                    <div class="about-main">
+                        <p class="eyebrow">About Me</p>
+                        <h1>Renée Goodman</h1>
+                        <p class="subtitle">Physics · Neuroscience · Intelligence</p>
+                        <p>
+                            I am a physicist by training with an interest in interdisciplinary problems. I completed a BSc in Biology and Physics from the University of Windsor in 2021
+                            where I conducted research with the Rondeau-Gagné group on conjugated polymers for flexible electronics. Following my bachelor's degree I had a brief interlude
+                            as a physicist for Thermtest Inc. where I worked on developing instruments for measuring the thermal properties of material.
                         </p>
-                        <div class="project-tags">
-                            <span>Unruh Effect</span>
-                            <span>Nanofluidics</span>
-                        </div>
-                        <a href="#" class="project-link">Learn More →</a>
-                    </article>
+                        <p>
+                            In 2023 I started my MSc in experimental condensend matter physics at McGill University with Prof. Guillaume Gervais. My thesis on Mass Flow and Noise Measurements
+                            in a Nanoelectrofluidic Device was completed in 2025. I have now switched to theoretical physics for my PhD, under the supervision of Prof. Viola Priesemann at
+                            the Max Planck Institute for Dynamics and Self-Organization, where I use tools from statistical physics and network theory to analyze large connectomics datasets,
+                            such as the Female Adult Fly Brain, to understand how brain networks are organized and how they process information.
+                        </p>
+                        <p>In my spare time I love to lift weights, go bikepacking, knit, and care for my many houseplants.</p>
+                    </div>
+                    <aside class="about-side">
+                        <h2>Research Interests</h2>
+                        <ul>
+                            <li>Neural network structure-function relationships</li>
+                            <li>Statistical physics approaches to connectomics</li>
+                            <li>Information processing in biological systems</li>
+                        </ul>
+                        <h2>Methods & Tools</h2>
+                        <ul class="skills-list">
+                            <li>Python</li>
+                            <li>Bayesian Modelling</li>
+                            <li>Network Theory</li>
+                            <li>Data Analysis</li>
+                            <li>Git</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
 
-                    <article class="project-card">
-                        <h3>Project Two</h3>
-                        <p class="project-description">Description of your second project. Highlight the challenges you solved and the impact it had.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                        </div>
-                        <a href="#" class="project-link">Learn More →</a>
+        <section id="research" class="section">
+            <div class="container">
+                <h2>Research</h2>
+                <div class="card-list">
+                    <article class="card">
+                        <h3>PhD: Connectomics and Network Organization</h3>
+                        <p>
+                            Ongoing work at the Max Planck Institute for Dynamics and Self-Organization uses statistical physics and network analysis to study how large-scale brain
+                            connectomes are organized and how network structure shapes computation.
+                        </p>
                     </article>
-
-                    <article class="project-card">
-                        <h3>Project Three</h3>
-                        <p class="project-description">Tell the story of your third project. What was the goal? What did you learn?</p>
-                        <div class="project-tags">
-                            <span>Design</span>
-                            <span>Prototyping</span>
-                        </div>
-                        <a href="#" class="project-link">Learn More →</a>
+                    <article class="card">
+                        <h3>MSc Thesis: Nanoelectrofluidic Mass Flow and Noise</h3>
+                        <p>
+                            Experimental study of He4 gas flow through an 80nm de Laval nozzle, achieving supersonic flow rates as a proof-of-principle toward experiments related to
+                            the Unruh effect.
+                        </p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
+        <section id="publications" class="section alt-section">
             <div class="container">
-                <h2>Let's Connect</h2>
-                <p class="contact-intro">I'm always interested in hearing about new opportunities and collaborations.</p>
-                <div class="contact-methods">
-                    <a href="mailto:renee.goodman@ds.mpg.de" class="contact-link">Email</a>
-                    <a href="https://github.com/reneegoodman" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
-                    <a href="www.linkedin.com/in/reneegoodman" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
-                    <a href="https://scholar.google.com/citations?user=cI2cFvEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="contact-link">Google Scholar</a>
-                </div>
+                <h2>Publications</h2>
+                <ol class="publication-list">
+                    <li>
+                        <strong>Selected publication placeholder.</strong>
+                        <span>Add your latest paper title, co-authors, venue, and year here.</span>
+                    </li>
+                    <li>
+                        <strong>Thesis and preprint placeholder.</strong>
+                        <span>Link thesis chapters, preprints, and conference abstracts as they become available.</span>
+                    </li>
+                </ol>
+                <p class="section-link"><a href="https://scholar.google.com/citations?user=cI2cFvEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">View Google Scholar profile</a></p>
+            </div>
+        </section>
+
+        <section id="cv" class="section">
+            <div class="container">
+                <h2>CV</h2>
+                <ul class="timeline">
+                    <li><strong>2025–Present:</strong> PhD in Theoretical Physics, Max Planck Institute for Dynamics and Self-Organization</li>
+                    <li><strong>2023–2025:</strong> MSc in Experimental Condensed Matter Physics, McGill University</li>
+                    <li><strong>2021:</strong> BSc in Biology and Physics, University of Windsor</li>
+                </ul>
+                <p class="section-link"><a href="#contact">Request full CV via email</a></p>
+            </div>
+        </section>
+
+        <section id="contact" class="section alt-section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p class="contact-intro">I am always interested in collaborations and scientific conversations.</p>
+                <ul class="contact-list">
+                    <li><a href="mailto:renee.goodman@ds.mpg.de">renee.goodman@ds.mpg.de</a></li>
+                    <li><a href="https://github.com/reneegoodman" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/reneegoodman" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=cI2cFvEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+                </ul>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 Renee Goodman. All rights reserved.</p>
+            <p>&copy; 2026 Renée Goodman</p>
         </div>
     </footer>
 </body>
